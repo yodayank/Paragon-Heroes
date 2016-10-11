@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	
+		<title> </title>
+		<meta charset="utf-8">	
+		<meta name="author" content="Dylan Wolfgram">
+		<meta name="description" content="Introducing properties and styles">
+		
+		<style>
+		
+			#container {
+				width: 85%
+				margin-left: auto;
+				margin-right: auto;
+			}
+		
+			.row {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+				flex-wrap: wrap;
+			}
+			
+			.hero {
+				flex: 0 0 250px;
+				width: 100%;
+				height: 250px;
+				color: #f0f0f0;
+				margin-bottom: 15px;
+				
+				transition: 1.0s;
+				transform-style: preserve-3d;
+				position: relative; 
+			}
+			
+			.hero h1, .hero p {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: 15px;
+			}
+			
+			.hero h1 {
+				font-size: 20px;
+				margin-top: 190px;
+				color: goldenrod;
+			}
+			
+			.hero h1, .hero .name {
+				color: goldenrod;
+			}
+			
+			.hero p{
+				font-size: 12px;
+			}
+			
+			.front, .back {
+				backface-visibility: hidden;
+				position: absolute;
+				top: 0px; 
+				left: 0px;
+				height: 250px;
+				width: 100%;
+			}
+			
+			.front {
+				background-size: cover;
+				transform: rotateY(0deg);
+			}
+			
+			.back {
+				background-color: #d0d0d0;
+				transform: rotateY(180deg);
+			}
+			
+			.hero:hover {
+				transform: rotateY(180deg);
+			}
+			
+			#one .front { background-image: url('frank.jpg');}
+			#two .front {background-image: url('capture.png');}
+			#three .front { background-image: url('ranch.jpg');}
+			#four .front { background-image: url('hello.jpg');}
+			
+			.back{
+				background-color: white;
+				transform: rotateY(180deg);
+				text-align: center;
+			}
+			
+			.back p.name {
+				margin-top: 75px;
+			}
+		
+		</style>
+</head>
+<body>
+
+	<div id="container">
+	
+		<div class="row">
+		
+			<div class="hero" id="one">
+				<div class="front">
+					<h1>Papa Frank</h1>
+					<p>Meme Lord</p>
+				</div>
+				
+				<div class="back">
+					<p class="name">Papa Frank</p>
+					<p>Meme Lord</p>
+				</div>
+			</div>
+			
+			
+			<div class="hero" id="two">
+				<div class="front">
+					<h1>Cyber Police</h1>
+					<p>Cyber Crime Stopper</p>
+			</div>
+			<div class="back">
+				<p class="name">Cyber Police</p>
+				<p>Cyber Crime Stopper</p>
+			</div>
+		</div>
+			
+			<div class="hero" id="three">
+				<div class="front">
+					<h1>Ranch</h1>
+					<p>Destroyer of Gods</p>
+			</div>
+			<div class="back">
+				<p class="name">Ranch</p>
+				<p>Destroyer of Gods</p>
+			</div>
+		</div>	
+			
+			<div class="hero" id="four">
+				<div class="front">
+					<h1>Harambe</h1>
+					<p>Lord and Savior</p>
+			</div>
+			<div class="back">
+				<p class="name">Harambe</p>
+				<p>Lord and Savior</p>
+			</div>
+		</div>
+		
+	</div>
+
+		
+</body>
+
+	
+</html>
