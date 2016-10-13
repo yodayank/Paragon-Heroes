@@ -7,6 +7,7 @@
 		<meta name="author" content="Dylan Wolfgram">
 		<meta name="description" content="Introducing properties and styles">
 		
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 		<style>
 		
 			#container {
@@ -78,6 +79,13 @@
 				transform: rotateY(180deg);
 			}
 			
+			.icons {
+				margin-top: 5px;
+				font-size: 36px;
+				color: goldenrod;
+			}
+			
+			
 			#one .front { background-image: url('frank.jpg');}
 			#two .front {background-image: url('capture.png');}
 			#three .front { background-image: url('ranch.jpg');}
@@ -87,6 +95,10 @@
 				background-color: white;
 				transform: rotateY(180deg);
 				text-align: center;
+			}
+			
+			.diamond {
+				transform: rotate(45deg);
 			}
 			
 			.back p.name {
@@ -108,8 +120,12 @@
 				</div>
 				
 				<div class="back">
-					<p class="name">Papa Frank</p>
+					<p class="name">Filthy Frank</p>
 					<p>Meme Lord</p>
+						<div class="icons">
+							<i class="fa fa-globe"></i>
+							<i class="fa fa-wrench"></i>
+						</div>
 				</div>
 			</div>
 			
@@ -122,6 +138,10 @@
 			<div class="back">
 				<p class="name">Cyber Police</p>
 				<p>Cyber Crime Stopper</p>
+					<div class="icons">
+						<i class="fa fa-certificate" aria-hidden="true"></i>
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+					</div>
 			</div>
 		</div>
 			
@@ -133,6 +153,10 @@
 			<div class="back">
 				<p class="name">Ranch</p>
 				<p>Destroyer of Gods</p>
+					<div class="icons">
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+					</div>
 			</div>
 		</div>	
 			
@@ -144,10 +168,17 @@
 			<div class="back">
 				<p class="name">Harambe</p>
 				<p>Lord and Savior</p>
+					<div class="icons">
+						<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+						<i class="fa fa-tree" aria-hidden="true"></i>
+					</div>
 			</div>
 		</div>
 		
 	</div>
+	
+
+	
 
 		
 </body>
